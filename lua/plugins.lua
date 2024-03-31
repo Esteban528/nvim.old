@@ -10,5 +10,5 @@ require('plugins/none-ls')
 require('plugins/completions')
 require('plugins/navic')
 require('plugins/statuslinebar')
-require('plugins/multicursor-pl')
+
 
