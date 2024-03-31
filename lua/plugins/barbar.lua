@@ -1,10 +1,10 @@
-vim.g.barbar_auto_setup = false -- disable auto-setup
-
-require'barbar'.setup {
-  -- WARN: do not copy everything below into your config!
-  --       It is just an example of what configuration options there are.
-  --       The defaults are suitable for most people.
-
+ return {'romgrk/barbar.nvim',
+    dependencies = {
+      'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+      'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+    },
+    init = function() vim.g.barbar_auto_setup = false end,
+    opts = {
   -- Enable/disable animations
   animation = true,
 
@@ -131,4 +131,6 @@ require'barbar'.setup {
   -- Sets the name of unnamed buffers. By default format is "[Buffer X]"
   -- where X is the buffer number. But only a static string is accepted here.
   no_name_title = nil,
+    },
 }
+

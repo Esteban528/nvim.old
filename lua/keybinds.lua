@@ -18,7 +18,7 @@ map("n", "<A-S-f>", ":lua vim.lsp.buf.format()<CR>")
 --Plugins
 --------------------------------------------
 
-map("n", "<C-n>", ":NvimTreeToggle<CR>")
+map("n", "<C-n>", ":Neotree position=right <CR>")
 
 map("n", "<C-h>", "<C-w>h")
 map("n", "<C-l>", "<C-w>l")
