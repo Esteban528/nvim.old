@@ -4,7 +4,6 @@ local function map(mode, key, result, args)
   -- vim.keymap.set
 end
 
-
 vim.g.mapleader = " "
 
 map("n", "<leader>w", ":w<CR>")
@@ -18,7 +17,7 @@ map("n", "<A-S-f>", ":lua vim.lsp.buf.format()<CR>")
 --Plugins
 --------------------------------------------
 
-map("n", "<C-n>", ":Neotree position=right <CR>")
+map("n", "<C-n>", ":NvimTreeToggle<CR>")
 
 map("n", "<C-h>", "<C-w>h")
 map("n", "<C-l>", "<C-w>l")
@@ -31,7 +30,7 @@ map("n", "<C-k>", "<C-w>k")
 
 local opts = nil
 -- Move to previous/next
-map('n', '<S-tab>', '<Cmd>BufferPrevious<CR>', opts)
+map('n', '<A-S-tab>', '<Cmd>BufferPrevious<CR>', opts)
 map('n', '<A-tab>', '<Cmd>BufferNext<CR>', opts)
 -- Re-order to previous/next
 map('n', '<A-<>', '<Cmd>BufferMovePrevious<CR>', opts)
