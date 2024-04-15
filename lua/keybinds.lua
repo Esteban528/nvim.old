@@ -12,6 +12,8 @@ map("n", "<C-w>", ":q<CR>")
 
 map("n", "<A-S-f>", ":lua vim.lsp.buf.format()<CR>")
 
+map("n", "<leader>;", "$a;<ESC>")
+
 
 --------------------------------------------
 --Plugins
