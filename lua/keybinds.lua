@@ -6,7 +6,7 @@ end
 
 vim.g.mapleader = " "
 
-map("n", "<leader>w", ":w<CR>")
+map("n", "<C-s>", ":w<CR>")
 map("n", "<leader>r", ":luafile %<CR>")
 map("n", "<C-w>", ":q<CR>")
 
