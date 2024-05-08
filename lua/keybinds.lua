@@ -8,9 +8,9 @@ vim.g.mapleader = " "
 
 map("n", "<C-s>", ":w<CR>")
 map("n", "<leader>r", ":luafile %<CR>")
-map("n", "<C-w>", ":q<CR>")
+map("n", "<C-S-w>", ":q<CR>")
 
-map("n", "<A-S-f>", ":lua vim.lsp.buf.format()<CR>")
+map("n", "<C-S-i>", ":lua vim.lsp.buf.format()<CR>")
 
 map("n", "<leader>;", "$a;<ESC>")
 
@@ -51,7 +51,7 @@ map('n', '<A-0>', '<Cmd>BufferLast<CR>', opts)
 -- Pin/unpin buffer
 map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 -- Close buffer
-map('n', '<A-w>', '<Cmd>BufferClose<CR>', opts)
+map('n', '<C-w>', '<Cmd>BufferClose<CR>', opts)
 
 map('n', '<A-W>', '<Cmd>BufferCloseAllButCurrentOrPinned<CR>', opts)
 -- Wipeout buffer
