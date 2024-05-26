@@ -16,4 +16,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
-require('onedark').load()
+require('gruvbox').load()
+-- require('onedark').load()
+
+local custom_gruvbox = require'lualine.themes.gruvbox'
+-- Change the background of lualine_c section for normal mode
+custom_gruvbox.normal.c.bg = '#1D2021'
+
+require('lualine').setup {
+  options = { theme  = custom_gruvbox },
+  ...
+}
+require 'colorizer'.setup()
+
+vim.cmd("colorscheme gruvbox")
