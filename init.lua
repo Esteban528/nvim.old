@@ -28,5 +28,6 @@ require('lualine').setup {
   ...
 }
 require 'colorizer'.setup()
+-- require 'treesitter'.setup()
 
 vim.cmd("colorscheme gruvbox")
