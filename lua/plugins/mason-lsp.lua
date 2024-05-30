@@ -6,6 +6,19 @@ local M = {
   }
 }
 
+M.opts = {
+  ensure_installed = {
+    "lua_ls",
+    "tsserver",
+    "html",
+    "cssls",
+    "intelephense",
+    "jdtls",
+    "tailwindcss",
+    "emmet_language_server",
+  }
+}
+
 M.init = function()
   require('mason').setup()
   require('mason-lspconfig').setup()
