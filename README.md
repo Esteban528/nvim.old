@@ -1,6 +1,6 @@
 # estebandev NeoVim
 
-##Instalación Automática (Borrará una configuración anterior)
+## Instalación Automática (Borrará una configuración anterior)
 ```cd ~/.config && rm nvim -rf && rm -rf ~/.local/share/nvim && git clone git@github.com:Esteban528/nvim.git && cd nvim && nvim -c 'MasonInstall lua-language-server' init.lua```
 
 Espere que descargue
