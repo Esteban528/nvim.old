@@ -6,8 +6,8 @@
 Espere que descargue
 
 ## Como se ve:
-![nvim](../images/img1)
-![nvim](../images/img2)
+![nvim](./images/img1)
+![nvim](./images/img2)
 
 ## Comandos
 - Abrir la barra de archivos y directorios: `Space+D`
