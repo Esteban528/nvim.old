@@ -15,9 +15,9 @@ local config = {
     '-jar', jdtls_path .. '/plugins/org.eclipse.equinox.launcher_1.6.800.v20240330-1250.jar',
     '-configuration', jdtls_path .. '/config_linux',
     '-data', home .. '/.workspace',
-    '-javaagent:' .. lombok_path,
+    '-javaagent: '..lombok_path,
   },
-  settings = {
+  --[[ settings = {
     java = {
       home = '/usr/lib/jvm/java-17-openjdk',  -- Configura la ruta a tu JDK
       import = {
@@ -25,12 +25,14 @@ local config = {
           jarPath = lombok_path -- Asegúrate de poner la ruta correcta a lombok.jar
         }
       }
-    }
-  }
+    } 
+  }]]
 }
 
 
+  vim.print(lombok_path)
 local lspconfig = require 'lspconfig'
 if (lspconfig.jdtls) then
   lspconfig.jdtls.setup(config)
+  -- vim.cmd(':echo '..lombok_path);
 end
