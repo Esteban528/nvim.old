@@ -6,11 +6,10 @@ end
 
 vim.g.mapleader = " "
 
-map("n", "<C-s>", ":w<CR>")
+map("n", "<C-s>", ":w<CR>", {noremap=false, silent=false, expr=false})
 map("n", "<leader>r", ":luafile %<CR>")
-map("n", "<C-S-w>", ":q<CR>")
-
-map("n", "<C-S-i>", ":lua vim.lsp.buf.format()<CR>")
+map("n", "<leader> wd", ":q<CR>")
+map("n", "<leader>cf", ":lua vim.lsp.buf.format()<CR>")
 
 map("n", "<leader>;", "$a;<ESC>")
 
@@ -18,7 +17,6 @@ map("n", "<leader>;", "$a;<ESC>")
 --------------------------------------------
 --Plugins
 --------------------------------------------
-
 map("n", "<leader>d", ":NvimTreeToggle<CR>")
 
 map("n", "<C-h>", "<C-w>h")
@@ -32,8 +30,8 @@ map("n", "<C-k>", "<C-w>k")
 
 local opts = nil
 -- Move to previous/next
-map('n', '<A-S-tab>', '<Cmd>BufferPrevious<CR>', opts)
-map('n', '<A-tab>', '<Cmd>BufferNext<CR>', opts)
+map('n', 'H', '<Cmd>BufferPrevious<CR>', opts)
+map('n', 'L', '<Cmd>BufferNext<CR>', opts)
 -- Re-order to previous/next
 map('n', '<A-<>', '<Cmd>BufferMovePrevious<CR>', opts)
 map('n', '<A->>', '<Cmd>BufferMoveNext<CR>', opts)
